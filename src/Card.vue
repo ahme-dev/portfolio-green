@@ -39,4 +39,7 @@
     transform: v-bind(cardTransform);
     transition: transform 0.2s;
   }
+  *::selection {
+    @apply bg-emerald-300;
+  }
 </style>
