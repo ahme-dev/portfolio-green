@@ -3,10 +3,10 @@
   import { useMouseInElement } from "@vueuse/core";
   const target = ref(null);
   const { elementX, elementY, isOutside, elementHeight, elementWidth } =
-    useMouseInElement(null);
+    useMouseInElement(target);
 
-  const cardTrasform = computed(() => {
-    const MAXROT = 8;
+  const cardTransform = computed(() => {
+    const MAXROT = 10;
 
     const rX = (
       MAXROT / 2 -
@@ -26,11 +26,15 @@
 <template>
   <p
     class="bg-gray-500 text-gray-800 bg-opacity-20 p-4 text-2xl hover:(shadow-lg shadow-emerald-300 cursor-pointer)"
-    :style="{
-      transform: cardTrasform,
-      transition: 'transform 0.2s ease-in-out',
-    }"
+    ref="target"
   >
     <slot></slot>
   </p>
 </template>
+
+<style scoped>
+  p {
+    transform: v-bind(cardTransform);
+    transition: transform 0.2s;
+  }
+</style>
