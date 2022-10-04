@@ -91,21 +91,21 @@
     <!-- Footer Start -->
     <footer
       id="contact"
-      class="flex items-center justify-center gap-4 bg-emerald-300 mt-24 p-4"
+      class="flex items-center justify-center gap-4 bg-emerald-300 mt-24"
     >
       <a
         href="https://github.com/ahmedkabd"
-        class="p-4 text-lg text-gray-800 border-t-4 border-transparent hover:(cursor-pointer border-t-4 border-gray-800)"
+        class="p-4 text-lg text-gray-800 hover:(cursor-pointer bg-gray-200)"
         >Github</a
       >
       <a
         href="mailto:ahmadkabdullah@pm.me"
-        class="p-4 text-lg text-gray-800 border-t-4 border-transparent hover:(cursor-pointer border-t-4 border-gray-800)"
+        class="p-4 text-lg text-gray-800 hover:(cursor-pointer bg-gray-200)"
         >Email</a
       >
       <a
         href="https://t.me/ahmedkabd"
-        class="p-4 text-lg text-gray-800 border-t-4 border-transparent hover:(cursor-pointer border-t-4 border-gray-800)"
+        class="p-4 text-lg text-gray-800 hover:(cursor-pointer bg-gray-200)"
         >Telegram</a
       >
     </footer>
