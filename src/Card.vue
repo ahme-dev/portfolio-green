@@ -27,6 +27,8 @@
   <p
     class="bg-gray-500 text-gray-800 bg-opacity-20 p-4 text-2xl hover:(shadow-lg shadow-emerald-300 cursor-pointer)"
     ref="target"
+    v-motion-fade-visible
+    :delay="100"
   >
     <slot></slot>
   </p>
