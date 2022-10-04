@@ -9,6 +9,10 @@
     id="container"
     class="min-w-screen min-h-screen text-gray-800 bg-gray-200 snap-y snap-mandatory overflow-y-scroll"
   >
+    <img
+      class="fixed filter blur-3xl min-h-screen w-screen z-0 opacity-20"
+      src="./assets/layered-steps-haikei.svg"
+    />
     <!-- Header -->
     <header
       id="header"
