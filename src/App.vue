@@ -1,6 +1,7 @@
 <script setup lang="ts">
   import Card from "./Card.vue";
   import Version from "./Version.vue";
+  import { info } from "./info";
 </script>
 
 <template>
@@ -25,21 +26,10 @@
       </Card>
       <nav class="flex gap-4 m-4">
         <a
-          href="#projects"
+          v-for="el in info"
+          :href="'#' + el.title.toLowerCase()"
           class="bg-emerald-300 p-4 font-bold text-gray-800 hover:(shadow-lg shadow-emerald-300)"
-          >Projects</a
-        >
-
-        <a
-          href="#skills"
-          class="bg-emerald-300 p-4 font-bold text-gray-800 hover:(shadow-lg shadow-emerald-300)"
-          >Skills</a
-        >
-
-        <a
-          href="#contact"
-          class="bg-emerald-300 p-4 font-bold text-gray-800 hover:(shadow-lg shadow-emerald-300)"
-          >Contact</a
+          >{{ el.title }}</a
         >
       </nav>
     </header>
@@ -47,47 +37,20 @@
 
     <!-- Main -->
     <main
-      class="flex flex-col justify-center items-center p-8 gap-8 min-h-screen md:(w-1/2 m-auto) snap-center"
+      class="flex flex-col justify-center items-center p-8 gap-8 min-h-screen"
     >
-      <h1
-        id="projects"
-        class="mt-24 p-4 text-2xl font-bold self-start text-gray-800 bg-emerald-300 hover:(shadow-lg shadow-emerald-300)"
+      <div
+        class="flex flex-col justify-center items-start p-8 gap-8 md:(w-1/2 m-auto)"
+        v-for="el in info"
       >
-        Projects
-      </h1>
-      <Card>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus at
-        aperiam modi, itaque reiciendis asperiores nemo ipsa consequatur sed
-        doloribus, maiores veritatis laudantium assumenda, eaque ut recusandae.
-        Asperiores consequatur beatae voluptate quia ipsam error nulla ducimus
-        vel et perspiciatis rerum praesentium, quod tempore, ratione iusto sit
-        esse cupiditate doloremque laborum.
-      </Card>
-      <Card>
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. A quis quas
-        illo perferendis nesciunt commodi reiciendis maxime recusandae cum iure
-        sunt, asperiores ab aut?
-      </Card>
-
-      <h1
-        id="skills"
-        class="mt-24 p-4 text-2xl font-bold self-start text-gray-800 bg-emerald-300 hover:(shadow-lg shadow-emerald-300)"
-      >
-        Skills
-      </h1>
-      <Card>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus at
-        aperiam modi, itaque reiciendis asperiores nemo ipsa consequatur sed
-        doloribus, maiores veritatis laudantium assumenda, eaque ut recusandae.
-        Asperiores consequatur beatae voluptate quia ipsam error nulla ducimus
-        vel et perspiciatis rerum praesentium, quod tempore, ratione iusto sit
-        esse cupiditate doloremque laborum.
-      </Card>
-      <Card>
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. A quis quas
-        illo perferendis nesciunt commodi reiciendis maxime recusandae cum iure
-        sunt, asperiores ab aut?
-      </Card>
+        <h1
+          :id="el.title.toLowerCase()"
+          class="mt-24 p-4 text-2xl font-bold self-start text-gray-800 bg-emerald-300 hover:(shadow-lg shadow-emerald-300)"
+        >
+          {{ el.title }}
+        </h1>
+        <Card v-for="item in el.items"> {{ item }} </Card>
+      </div>
     </main>
     <!-- Main End -->
     <!-- Footer Start -->

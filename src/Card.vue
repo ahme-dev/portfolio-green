@@ -6,7 +6,7 @@
     useMouseInElement(target);
 
   const cardTransform = computed(() => {
-    const MAXROT = 10;
+    const MAXROT = 18;
 
     const rX = (
       MAXROT / 2 -
@@ -19,16 +19,16 @@
 
     return isOutside.value
       ? ""
-      : `perspective(${elementWidth.value}px) rotateX(${rX}deg) rotateY(${rY}deg)`;
+      : `perspective(${
+          elementWidth.value * 3
+        }px) rotateX(${rX}deg) rotateY(${rY}deg)`;
   });
 </script>
 
 <template>
   <p
-    class="bg-gray-500 text-gray-800 bg-opacity-20 p-4 text-2xl hover:(shadow-lg shadow-emerald-300 cursor-pointer)"
+    class="bg-gray-500 text-gray-800 bg-opacity-20 p-4 text-2xl w-1/1 hover:(shadow-lg shadow-emerald-300 cursor-pointer)"
     ref="target"
-    v-motion-fade-visible
-    :delay="100"
   >
     <slot></slot>
   </p>
