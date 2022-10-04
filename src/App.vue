@@ -16,10 +16,11 @@
         My name's <span class="bg-emerald-300 px-2">Ahmed</span>
       </h1>
       <Card>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo sit
-        perspiciatis reprehenderit nam perferendis ut obcaecati inventore, quia
-        sed velit rerum possimus, expedita molestiae doloribus dolor delectus
-        harum quasi fugit.
+        At this point, I can't write more nonesense, so we'll go with Lorem,
+        ipsum dolor sit amet consectetur adipisicing elit. Quisquam doloremque
+        corporis voluptatibus, harum fuga tempora voluptate laborum quod
+        dignissimos rem. Recusandae repellendus quo facilis? Molestiae nobis
+        tempora autem officia reprehenderit.
       </Card>
       <nav class="flex gap-4 m-4">
         <a
