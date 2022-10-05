@@ -13,18 +13,34 @@
     />
     <!-- Styles -->
     <style>
+      /* General */
       *,
       *::before,
       *::after {
         margin: 0;
         padding: 0;
         box-sizing: border-box;
+        transition: 0.5s ease-in-out;
         color: inherit;
         z-index: 5;
         font-family: "Lexend", sans-serif;
       }
+      /* Selection */
       *::selection {
         background-color: gainsboro;
+      }
+      /* Scrollbar */
+      * {
+        scrollbar-color: rgba(75, 255, 165, 0.747) transparent;
+        scrollbar-width: 0.5rem;
+      }
+      *::-webkit-scrollbar-thumb {
+        background-color: rgba(75, 255, 165, 0.747);
+        width: 0.5rem;
+      }
+      *::-webkit-scrollbar-track {
+        background-color: transparent;
+        width: 0.5rem;
       }
     </style>
   </head>

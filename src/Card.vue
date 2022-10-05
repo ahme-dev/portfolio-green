@@ -37,7 +37,8 @@
 <style scoped>
   p {
     transform: v-bind(cardTransform);
-    transition: transform 0.2s;
+    transition: transform 0.2s ease-in-out;
+    transition-delay: 0;
   }
   *::selection {
     @apply bg-emerald-300;
