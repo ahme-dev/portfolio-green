@@ -84,7 +84,7 @@
     <!-- Fixed Symbols -->
     <a
       href="#header"
-      class="fixed top-2 right-5 text-5xl text-gray-500 opacity-20 select-none hover:(text-emerald-300 opacity-90)"
+      class="fixed opacity-0 select-none md:(top-2 right-5 text-5xl text-gray-500 opacity-20) hover:(text-emerald-300 opacity-90)"
     >
       ◥
     </a>
