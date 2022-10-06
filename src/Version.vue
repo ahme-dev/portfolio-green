@@ -11,6 +11,7 @@
     <a class="vlink" href="https://c.ahmed.systems"> C </a>
     <a class="vlink" href="https://d.ahmed.systems"> D </a>
     <a class="selected" href="https://e.ahmed.systems"> E </a>
+    <a class="vlink" href="https://f.ahmed.systems"> F </a>
   </div>
 </template>
 
