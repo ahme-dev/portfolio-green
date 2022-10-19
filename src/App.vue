@@ -1,6 +1,5 @@
 <script setup lang="ts">
   import Card from "./Card.vue";
-  import Version from "./Version.vue";
   import { info } from "./info";
 </script>
 
@@ -79,8 +78,6 @@
       >
     </footer>
     <!-- Footer End -->
-    <!-- Version Switcher -->
-    <Version></Version>
     <!-- Fixed Symbols -->
     <a
       href="#header"
