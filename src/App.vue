@@ -63,7 +63,7 @@
       class="flex items-center justify-center gap-4 bg-emerald-300 mt-24"
     >
       <a
-        href="https://github.com/ahmedkabd/e.ahmed.systems"
+        href="https://github.com/ahmedkabd/portfolio-green"
         class="p-4 text-lg text-gray-800 hover:(cursor-pointer bg-gray-200)"
         >Github</a
       >
