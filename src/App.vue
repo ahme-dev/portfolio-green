@@ -72,7 +72,7 @@
         >Email</a
       >
       <a
-        href="https://t.me/ahmedkabd"
+        href="https://t.me/ahmedkapro"
         class="p-4 text-lg text-gray-800 hover:(cursor-pointer bg-gray-200)"
         >Telegram</a
       >
